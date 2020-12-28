@@ -1,1 +1,37 @@
-hola que tal soy archivo de prueba
+#Procedimiento simple para acceder y trabajar al proyecto#
+
+Requerimientos:
+-Instalar Node js
+-Instalar la extencion de Git para clonar repositorios
+	>tener una cuenta en github
+	>no se que mas sea necesario de Github xd
+	
+
+---#INSTALACION DE REACT#---
+-Abrir la terminal CMD
+-ejecutar los siguientes comandos:
+	
+	npm install -g npm@latest
+	npm cache clean --force
+	npm install -g create-react-app
+
+---#CLONAR PROYECTO SALOUA GITHUB#---
+-Abrir la terminal CMD
+-ejecutar los siguientes comandos:
+
+	git clone https://github.com/MagnesiaReal/Saloua_Proyect_React.git
+	cd Saloua_Proyect_React
+
+-para abrir el proyecto en REACT y empezar a trabajar escribir las siguientes lineas de comando
+
+	npm install
+	npm start
+
++Automaticamente se abrira el navegador web y se mostrara la pagina de inicio por default
+-Recomiendo VISUAL CODE para trabajar con el proyecto unicamente abren la carpeta desde visual code y a crear compomentes
+HAPPY HACKING
+
+
+
+
+
