@@ -1,6 +1,8 @@
 import React from 'react';
 
-import logoSaloua from './logo-saloua.svg'
+import logoSaloua from './logo-saloua.svg';
+
+import {Link} from 'react-router-dom';
 
 function Registrar() {
 
@@ -14,6 +16,7 @@ function Registrar() {
                     </span>
 
                 </div>
+                
                 <div className="dropdown-divider"></div>
                 <div className="container">
                     <form>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Procedimiento simple para acceder y trabajar al proyecto#
 
 Requerimientos:
@@ -32,15 +31,3 @@ Requerimientos:
 -Recomiendo VISUAL CODE para trabajar con el proyecto unicamente abren la carpeta desde visual code y a crear compomentes
 HAPPY HACKING
 
-
-
-
-
-=======
-John DeLorean fundó la DeLorean Motor 
-Company en Detroit (Míchigan) el 24 de octubre de 1975. 
-Era muy sabido en la industria del automóvil que DeLorean 
-era un ingeniero muy capacitado, un innovador hombre de 
-negocios, y llegó a ser la persona más joven que se convirtió en 
-ejecutivo de General Motors.
->>>>>>> 5c7f51dabded26b32ff136b8a436eb7853e2d494

@@ -17,6 +17,7 @@ import Footer from './components/Footer'; //Pie de pagina
 import Header from './components/Header';
 import BodyInit from './components/BodyInit';
 import Registrar from './components/Registrar';
+import Login from './components/Login';
 
 //Bootstrap
 import Button from 'react-bootstrap/Button';
@@ -41,6 +42,23 @@ function App() {
           </Route>
           <Route exact path='/newuseruwu'>
             <Registrar/>
+          </Route>
+          <Route exact path='/ayuda'>
+            <div id="content">
+              <div className="container">
+                <Header />
+
+                <Footer />
+              </div>
+            </div>
+          </Route>
+          <Route exact path='/login'>
+            <div id="content">
+              <div className="container">
+                <Login/>
+              </div>
+            </div>
+
           </Route>
         </Switch>
 
