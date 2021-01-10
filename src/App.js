@@ -8,7 +8,6 @@ import { //Librerias para la navegacion entre diferentes paginas
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   Redirect
 } from 'react-router-dom';
 
@@ -19,10 +18,9 @@ import BodyInit from './components/BodyInit';
 import Registrar from './components/Registrar';
 import Login from './components/Login';
 
-//Bootstrap
-import Button from 'react-bootstrap/Button';
 
 function App() {
+  
   return (
     <div className="App">
       <Router>{/*Aqui adentro van todos los componentes y las paginas que se vayan generando*/}

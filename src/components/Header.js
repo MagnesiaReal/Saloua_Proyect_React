@@ -1,8 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 
-//Logo import
-import logoSaloua from './logo-saloua.svg';
 
 import Side_bar from './Side_bar';
 

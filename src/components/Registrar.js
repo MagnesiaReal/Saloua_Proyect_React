@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logoSaloua from './logo-saloua.svg';
+import logoSaloua from '../images/logo-saloua.svg';
 
 import {Link} from 'react-router-dom';
 

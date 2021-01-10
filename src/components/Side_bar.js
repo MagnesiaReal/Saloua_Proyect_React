@@ -5,9 +5,8 @@ import {
 
 
 //Logo import
-import logoSaloua from './logo-saloua.svg'
+import logoSaloua from '../images/logo-saloua.svg'
 //Bootstrap
-import Button from 'react-bootstrap/Button'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 
 function Side_bar(props){
