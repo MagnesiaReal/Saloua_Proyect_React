@@ -21,20 +21,20 @@ function Login(){
                         <div className="row">
                             <div className="col-1"></div>
                             <div className="col-10">
-                                <label className="" for="Input_name">
+                                <label className="">
                                     Correo:   
                                 </label>
-                                <input type="text" id="Input_name" className="form-control" name="new_user_name" placeholder="Jhon" requiered>
+                                <input type="text" id="Input_name" className="form-control" name="new_user_name" placeholder="Jhon" required>
                                 </input>
 
                             </div>
                             <div className="col-1"></div>
                             <div className="col-1"></div>
                             <div className="col-10">
-                                <label className="" for="Input_pass">
+                                <label className="">
                                     Contraseña:
                                 </label>
-                                <input type="password" id="Input_pass" className="form-control" name="new_user_pass" requiered>
+                                <input type="password" id="Input_pass" className="form-control" name="new_user_pass" required>
                                 </input>
 
                             </div>

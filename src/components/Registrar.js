@@ -23,34 +23,34 @@ function Registrar() {
                         <div className="row">
                             <div className="col-1"></div>
                             <div className="col-10">
-                                <label className="" for="Input_name">
+                                <label className="" >
                                     Nombre:   
                                 </label>
-                                <input type="text" id="Input_name" className="form-control" name="new_user_name" placeholder="Jhon" requiered>
+                                <input type="text" id="Input_name" className="form-control" name="new_user_name" placeholder="Jhon" required>
                                 </input>
 
                             </div>
                             <div className="col-1"></div>
                             <div className="col-1"></div>
                             <div className="col-10">
-                                <label className="" for="Input_lastname">
+                                <label className="" >
                                     Apellido:
                                 </label>
-                                <input type="text" id="Input_lastname" className="form-control" name="new_user_lastname" placeholder="Cena" requiered>
+                                <input type="text" id="Input_lastname" className="form-control" name="new_user_lastname" placeholder="Cena" required>
                                 </input>
 
                             </div>
                             <div className="col-1"></div>
                             <div className="col-1"></div>
                             <div className="col-10">
-                                <label for="Input_startdate">Fecha de nacimiento:</label>
+                                <label >Fecha de nacimiento:</label>
                                 <input type="date" className="form-control" id="Input_startdate" name="new_user_date">
                                 </input> 
                             </div>
                             <div className="col-1"></div>
                             <div className="col-1"></div>
                             <div className="col-10">
-                                <label for="Input_oc">Ocupacion:</label>
+                                <label >Ocupacion:</label>
                                 <select name="new_user_oc" id="Input_oc" className="form-control">
                                     <option value="1">Estudiante</option>
                                     <option value="2">Agente del FBI</option>
@@ -60,30 +60,30 @@ function Registrar() {
                             <div className="col-1"></div>
                             <div className="col-1"></div>
                             <div className="col-10">
-                                <label className="" for="Input_email">
+                                <label className="" >
                                     Correo Electronico:
                                 </label>
-                                <input type="text" id="Input_email" className="form-control" name="new_user_email" placeholder="correo123@nasa.com" requiered>
+                                <input type="text" id="Input_email" className="form-control" name="new_user_email" placeholder="correo123@nasa.com" required>
                                 </input>
 
                             </div>
                             <div className="col-1"></div>
                             <div className="col-1"></div>
                             <div className="col-10">
-                                <label className="" for="Input_pass">
+                                <label className="" >
                                     Password:
                                 </label>
-                                <input type="password" id="Input_pass" className="form-control" name="new_user_pass" requiered>
+                                <input type="password" id="Input_pass" className="form-control" name="new_user_pass" required>
                                 </input>
 
                             </div>
                             <div className="col-1"></div>
                             <div className="col-1"></div>
                             <div className="col-10">
-                                <label className="" for="Input_passverify">
+                                <label className="" >
                                     Confirmar Password:
                                 </label>
-                                <input type="password" id="Input_passverify" className="form-control" name="new_user_passverify" requiered>
+                                <input type="password" id="Input_passverify" className="form-control" name="new_user_passverify" required>
                                 </input>
 
                             </div>
@@ -93,7 +93,7 @@ function Registrar() {
                         <div className="d-flex justify-content-center">
                                 <input className="btn btn-saloua" type="submit" value="Registrar" style={{margin : "10px"}}></input>
                         </div>
-                        
+                        <script src="conectdata.js"></script>
                     </form>
                 </div>
             </div>
