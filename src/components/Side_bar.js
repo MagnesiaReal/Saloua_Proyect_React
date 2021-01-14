@@ -5,7 +5,7 @@ import {
 
 
 //Logo import
-import logoSaloua from '../images/logo-saloua.svg'
+import logoSaloua from '../images/logo-saloua.png'
 //Bootstrap
 import NavDropdown from 'react-bootstrap/NavDropdown'
 
@@ -14,7 +14,7 @@ function Side_bar(props){
 
     if(Estado){
         var togglesidebar = 'active';
-        console.log("lo que sea alv");
+
     }
 
     
@@ -26,22 +26,22 @@ function Side_bar(props){
                     <i className = "fas fa-arrow-left"></i>
                 </div>
                 <div className="sidebar-header">
-                    <img src = {logoSaloua} className = "logo-Saloua d-inline-block" alt = "err-logo" width = "%100" height = "80px"/><h1 className = "d-inline-block align-middle">SALOUA</h1>
+                    <img src = {logoSaloua} className = "Saloua d-inline-block" alt = "err-logo" width = "%100" height = "150px"/>
                 </div>
                 <ul className="list-unstyled">
                     <li>
-                        <Link to="/inicio"><i className="fas fa-home"></i> Inicio</Link>
+                        <Link to="/inicio"><i className="fas fa-home"></i><br /> Inicio <abbr className="nahua" title="Origen, princicpio de algo (en lengua Náhuatl)">Peuhcayotl</abbr></Link>
                     </li>
                     <li>
-                        <Link to="/acerca"><i className="fas fa-users"></i> Quienes somos</Link>
+                        <Link to="/acerca"><i className="fas fa-users"></i><br /> Quienes somos <abbr className="nahua" title="Acerca de algo (en lengua Náhuatl)">Tenahuac</abbr></Link>
                     </li>
                     <li>
-                        <Link to="/ayuda"><i className="fas fa-question-circle"></i> Ayuda alv</Link>
+                        <Link to="/ayuda"><i className="fas fa-question-circle"></i><br /> Ayuda <abbr className="nahua" title="Ayudar (en lengua Náhuatl); paleografía: kimäkïxtia">Maquixtia </abbr></Link>
                     </li>
                     
                     <NavDropdown.Divider/>
-                    <li>
-                        <a href="https://libros.conaliteg.gob.mx/index.html"><i className="fas fa-book-open"></i> CONALITEG</a>
+                    <li className="conaliteg">
+                        <a href="https://libros.conaliteg.gob.mx/index.html"><i className="fas fa-book-open"></i><br /> CONALITEG</a>
                     </li>
                 </ul>
             </nav>

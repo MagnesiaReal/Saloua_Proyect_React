@@ -2,6 +2,7 @@
 import "./css/stylesidebar_tony.css";
 import './css/App.css';
 import './css/Reg.css';
+import './css/mainContent.css';
 
 //import from react
 import { //Librerias para la navegacion entre diferentes paginas
@@ -17,6 +18,7 @@ import Header from './components/Header';
 import BodyInit from './components/BodyInit';
 import Registrar from './components/Registrar';
 import Login from './components/Login';
+import Ayuda from './components/Ayuda';
 
 
 function App() {
@@ -33,19 +35,22 @@ function App() {
               <div className="container">
                 <Header />
                 <BodyInit />
-
                 <Footer />
               </div>
             </div> 
           </Route>
           <Route exact path='/newuseruwu'>
-            <Registrar/>
+            <div id="content">
+              <div className="container">
+                <Registrar/>
+              </div>
+            </div>
           </Route>
           <Route exact path='/ayuda'>
             <div id="content">
               <div className="container">
                 <Header />
-
+                <Ayuda/>
                 <Footer />
               </div>
             </div>

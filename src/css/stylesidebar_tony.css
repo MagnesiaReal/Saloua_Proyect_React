@@ -1,8 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #fcdab7;
-    
+
 }
 
 /* p {
@@ -69,8 +67,10 @@ a:focus {
     background: #133b5c;
     color: #fcdab7;
     transition: all 0.3s;
-    /* overflow-y: scroll; */
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+   letter-spacing: 1px;
+
 }
 
 #sidebar.active {
@@ -124,12 +124,28 @@ a:focus {
     padding: 20px 0;
     border-bottom: 1px solid #fcdab7;
 }
-
-#sidebar ul p {
-    color: #fcdab7;
-    padding: 10px;
+#sidebar img{
+   margin-left: 30%;
+}
+abbr.nahua{
+    text-decoration: none;
+    font-weight: lighter;
+    display: block;
+    margin-left: 22%;
+    margin-right: 22%;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-radius: 30% 30%;
+    padding-top: 1.5%;
+    
 }
 
+
+
+#sidebar ul li {
+    text-align: center;
+  
+    color: #fff;
+}
 #sidebar ul li a {
     padding: 10px;
     font-size: 1.1em;
@@ -138,7 +154,10 @@ a:focus {
 /* color de letras de etiqueta a contenida en li de ul en la id sidebar */
 #sidebar ul li a:hover {
     color: #133b5c;
-    background: #fcdab7;
+    background: #fff;
+}
+#sidebar ul li a:hover abbr.nahua{
+    border-top: 1px solid #133b5c;
 }
 
 #sidebar ul li.active>a,
@@ -212,6 +231,10 @@ a.article:hover {
     position: absolute;
     top: 0;
     right: 0;
+    background-image: url(../images/22.png);
+    background-repeat: no-repeat;
+
+    background-position: bottom;
 }
 
 
@@ -221,5 +244,11 @@ a.article:hover {
     }
     #content{
         width: calc(100% - 250px);
+        background-size: cover;
+    }
+}
+@media (max-height: 615px){
+    #sidebar{
+        overflow-y: scroll;
     }
 }
