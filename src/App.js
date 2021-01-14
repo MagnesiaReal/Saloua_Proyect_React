@@ -46,6 +46,16 @@ function App() {
               </div>
             </div>
           </Route>
+          <Route exact path='/acerca'> 
+            <div id="content">
+              <div className="container">
+                <Header />
+                <BodyInit />
+
+                <Footer />
+              </div>
+            </div> 
+          </Route>
           <Route exact path='/ayuda'>
             <div id="content">
               <div className="container">
