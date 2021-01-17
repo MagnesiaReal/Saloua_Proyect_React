@@ -5,20 +5,20 @@
 .footer-saloua-cpy{
   margin: 0px;
   background-color: #1d2d50;
-  color : #fcdab7;
+  color : #fff;
 }
 
 .footer-saloua-info{
   margin: 0px;
   background-color: #133b5c;
-  color : #fcdab7;
+  color : #fff;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 .header-saloua{
   background-color: #1d2d50;
-  color : #fcdab7;
+  color : #fff;
   width : 100%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -34,23 +34,23 @@
 } */
 
 .btn-saloua{
-  border-color: #fcdab7;
+  border-color: #fff;
   background-color: #133b5c;
-  color: #fcdab7;
+  color: #fff;
 }
 
 .btn-saloua:hover{
   background-color: #1e5f74;
-  color: #fcdab7;
+  color: #fff;
 }
 
 .btn-saloua-reg{
   background-color: #133b5c;
-  color: #fcdab7;
+  color: #fff;
 }
 
 .btn-saloua-reg:hover{
-  background-color: #fcdab7;
+  background-color: #fff;
   color: #133b5c;
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import logoSaloua from '../images/logo-saloua.svg';
-import {Link, Redirect} from 'react-router-dom';
+import {Link, Redirect, withRouter} from 'react-router-dom';
+import Proptypes from 'prop-types'
 
 import API from '../http-axios'
 
@@ -16,11 +17,10 @@ class Login extends React.Component{
         this.state = {
             email : '',
             pass : '',
-            redirect : false,
-            incorrecto : <div></div>
+            incorrecto : <div></div>,
+            logged : false
         }
     }
-
     onChangeCorreo(e) {
         this.setState({email : e.target.value})
     }
@@ -28,26 +28,29 @@ class Login extends React.Component{
         this.setState({pass : e.target.value})
     }
 
-    onLogin(e){
+    componentWillUnmount (){
+        this.props.history.push('/dashboard');
+    }
+    async onLogin(e){
         e.preventDefault();
         const userVerify = {
             email : this.state.email,
             pass : this.state.pass
         }
-        if(true){
-            this.setState({incorrecto : <div align="center">Correo o Pass incorrecta</div>})
-            console.log("pass or user incorrecto");
-        }else{
-            API.post('/node/users/login', userVerify)
+        API.post('/node/users/login', userVerify)
             .then(respuesta => {
-                console.log(respuesta.data);
+                // console.log(respuesta.data);
+                if(respuesta.data){
+                    this.props.setSession(respuesta.data);
+                    this.componentWillUnmount();
+                }else 
+                {
+                    this.setState({email : '', pass : '', incorrecto : <div align="center">Correo o Pass incorrecta</div>})
+                }
             }).catch(error => {
                 console.log(error);
-            });
-            this.setState({email : '', pass : '' , redirect : true});
-        }
+        });
     }
-
     render(){
         return(
             <div className="registrar-saloua">
@@ -94,7 +97,10 @@ class Login extends React.Component{
             </div>
         );
     }
-
 }
 
-export default Login;
+Login.propTypes = {
+    setSession : Proptypes.func.isRequired
+};
+
+export default withRouter(Login);
