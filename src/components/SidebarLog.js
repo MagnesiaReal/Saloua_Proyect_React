@@ -25,16 +25,16 @@ class SidebarLog extends react.Component {
         if(this.state.toggle){
             var togglesidebar = 'active';
         }
-        if(this.props.location.pathname == '/dashboard/clases'){
+        if(this.props.location.pathname === '/dashboard/clases'){
             var classtoggle = {display : "none"};
         }
-        if(this.props.location.pathname == '/dashboard/actividades'){
+        if(this.props.location.pathname === '/dashboard/actividades'){
             var activitytoggle = {display : "none"};
         }
-        if(this.props.location.pathname == '/dashboard/temas'){
+        if(this.props.location.pathname === '/dashboard/temas'){
             var topictoggle = {display : "none"};
         }
-        if(this.props.location.pathname == '/dashboard'){
+        if(this.props.location.pathname === '/dashboard'){
             var infotoggle = {display : "none"};
         }
         

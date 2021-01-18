@@ -1,6 +1,6 @@
 import React from 'react'
 import logoSaloua from '../images/logo-saloua.svg';
-import {Link, Redirect, withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 import Proptypes from 'prop-types'
 
 import API from '../http-axios'

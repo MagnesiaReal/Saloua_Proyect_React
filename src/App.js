@@ -35,8 +35,6 @@ function getSession() {
   return userToken
 }
 
-
-
 function App(){
   function outSession(){
     sessionStorage.removeItem('usersession');
@@ -66,7 +64,7 @@ function App(){
             <Route exact path="/"> {/*Redirije a la pagina de inicio por default*/}
               <Redirect to="/inicio"/>
             </Route>
-            <Route exact path="/dashboard"> {/*Redirije a la pagina de inicio por default*/}
+            <Route exact path="/dashboard/*"> {/*Redirije a la pagina de inicio por default*/}
               <Redirect to="/inicio"/>
             </Route>
             <Route exact path='/inicio'> 

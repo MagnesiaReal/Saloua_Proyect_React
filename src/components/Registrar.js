@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import logoSaloua from '../images/logo-saloua.svg';
 
-import {Link, Redirect} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 
 import API from '../http-axios'
 
@@ -82,9 +82,6 @@ class Registrar extends Component{
     
 
     render() {
-        // API.get('/node/users/list').then(res => {
-        //     console.log(res.data.data);
-        //     });
         if(this.state.redirect){
             return <Redirect push to="/inicio"/>;
         }
@@ -135,10 +132,10 @@ class Registrar extends Component{
                                 <div className="col-10">
                                     <label >Ocupacion:</label>
                                     <select name="new_user_oc" value={this.state.ocupacion} onChange={this.onChangeOcupacion} className="form-control">
-                                        <option value="1">Estudiante</option>
-                                        <option value="2">Profesor</option>
-                                        <option value="3" disabled>Admin 😎(disabled)</option>
-                                        <option value="5" disabled>Agente del FBI</option>
+                                        <option value="0">Estudiante</option>
+                                        <option value="1">Profesor</option>
+                                        <option value="2" disabled>Admin 😎(disabled)</option>
+                                        <option value="3" disabled>Agente del FBI</option>
                                     </select>
                                 </div>
                                 <div className="col-1"></div>
