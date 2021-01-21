@@ -11,8 +11,8 @@ class HeaderLog extends react.Component {
     constructor(props) {
         super(props)
         this.state = {
-            nombre: '',
-            listadelibros : []
+            user : JSON.parse(sessionStorage.getItem('usersession')),
+            listadelibros : [],
         }
         this.onLogout = this.onLogout.bind(this);
         this.fetchLibros = this.fetchLibros.bind(this);
@@ -58,10 +58,10 @@ class HeaderLog extends react.Component {
 
                     <button className="btn btn-saloua dropdown-toggle m-2" id="dropdownop" data-toggle="dropdown" ><i className="fas fa-user"></i></button>
                     <div className="dropdown-menu" aria-labelledby="dropdownop">
-                        <b style={{ padding: ".25rem 1.5rem" }}>Magne</b>
+                        <b style={{ padding: ".25rem 1.5rem" }}>{this.state.user.nombre +' '+this.state.user.apellido}</b>
                         <div className="dropdown-divider"></div>
                         <button className="dropdown-item" onClick={this.onLogout}>Cerrar sesión</button>
-                        <Link className="dropdown-item" to="/">Configuracion</Link>
+                        {/* <Link className="dropdown-item" to="/">Configuracion</Link> */}
                     </div>
 
                 </div>

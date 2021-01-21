@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function BodyInit(){
+function Ayuda(){
 
     return(
         <div className = "m-2">
@@ -20,11 +20,11 @@ function BodyInit(){
                     </div>
                 </div>
                 <div className="col-lg-8">
-                    <p className="descrip">Haz click sobre la imagen para abrir la guia y el manual de usuario en el navegador. Presiona descargar para guardarlo en tu dispositivo.
+                    <div className="descrip">Haz click sobre la imagen para abrir la guia y el manual de usuario en el navegador. Presiona descargar para guardarlo en tu dispositivo.
                         <div className="d-flex justify-content-center">
                             <button className = "btn btn-saloua-reg">Descargar</button>
                         </div>
-                    </p>
+                    </div>
 
                 </div>
             </div>
@@ -60,7 +60,7 @@ function BodyInit(){
                     </div>
                 </div>
                 <div className="col-lg-8">
-                    <p className="descrip">Gracias por ayudarnos, cuentanos ¿Qué pasa?:
+                    <div className="descrip">Gracias por ayudarnos, cuentanos ¿Qué pasa?:
                         <input type="text" id="Input_reporte_tx" className="form-control" name="reporte" required></input>
                         Agregar Captura:<br />
                         <input type="file" id="Input_img_rep" className="im_rep" name="im_rep" required>
@@ -68,7 +68,7 @@ function BodyInit(){
                         <div className="d-flex justify-content-center">
                                 <input className="btn btn-saloua-reg" type="submit" value="Enviar Reporte" style={{margin : "10px"}}></input>
                     </div>
-                    </p>
+                    </div>
                     
                 </div>
             </div>
@@ -80,4 +80,4 @@ function BodyInit(){
     );
 }
 
-export default BodyInit;
+export default Ayuda;

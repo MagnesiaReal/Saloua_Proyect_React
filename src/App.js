@@ -19,9 +19,12 @@ import BodyInit from './components/BodyInit';
 import Registrar from './components/Registrar';
 import Login from './components/Login';
 import Ayuda from './components/Ayuda';
+import Acerca from './components/Acerca';
 import Clases from './components/Clases';
 import Actividades from './components/Actividades';
 import Temas from './components/Temas';
+import Clase from './components/Clase';
+import Actividad from './components/Actividad';
 
 
 import { Component, useEffect, useState } from "react";
@@ -87,7 +90,7 @@ function App(){
               <div id="content">
                 <div className="container">
                   <Header />
-                  <BodyInit />
+                  <Acerca/> 
   
                   <Footer />
                 </div>
@@ -117,6 +120,7 @@ function App(){
       </div>
     );
   }else{
+    
     return(
       <Router>
         <Switch>
@@ -146,6 +150,12 @@ function App(){
           </Route>
           <Route exact path='/dashboard/temas'>
             <Temas outSession={outSession}></Temas>
+          </Route>
+          <Route exact path={`/dashboard/clases/:classId`}>
+            <Clase outSession={outSession}/>
+          </Route>
+          <Route exact path={`/dashboard/actividades/:actId`}>
+            <Actividad outSession={outSession}/>
           </Route>
         </Switch>
       </Router>

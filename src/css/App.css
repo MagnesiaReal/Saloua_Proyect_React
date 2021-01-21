@@ -54,6 +54,57 @@
   color: #133b5c;
 }
 
+.list-saloua{
+  border-color: #fff;
+  background-color: #133b5c;
+  color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.list-saloua:hover{
+  border-color: #fff;
+  background-color: #1e5f74;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.v-divider-saloua{
+  border-left: 1px solid white;
+  height: 100%;
+}
+
+.list-saloua .list-saloua-id{
+  background-color: #1d2d50;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
+}
+
+.list-saloua .list-saloua-calif{
+  background-color: #1d2d50;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+}
+
+.delete-class {
+  background-color: #1d2d50;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.delete-class:hover {
+  background: #fff;
+  color: #133b5c;
+}
+
+.clase-header {
+  background-color: black;
+  color : white;
+  border-radius: 10px;
+}
+
 
 
 

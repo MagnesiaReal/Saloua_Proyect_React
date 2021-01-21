@@ -1,5 +1,4 @@
 import React from 'react'
-import logoSaloua from '../images/logo-saloua.svg';
 import {withRouter} from 'react-router-dom';
 import Proptypes from 'prop-types'
 
@@ -56,10 +55,9 @@ class Login extends React.Component{
             <div className="registrar-saloua">
                 <div id="propiedades-saloua" className="container">
                     <div className="col" align="center">
-                        <img src={logoSaloua} className="logo-Saloua" alt="err-logo" width="%100" height="80px" />
-                        <span className="d-inline-block align-middle">
-                            <h1 className="">SALOUA</h1>
-                        </span>
+                        <div className="d-inline-block align-middle">
+                            <h2 className="">Iniciar sesión</h2>
+                        </div>
     
                     </div>
                     <div className="dropdown-divider"></div>
