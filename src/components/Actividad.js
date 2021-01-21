@@ -53,17 +53,16 @@ function Actividad(props) {
     }
 
     if (userType.ocupacion === 0) { // es un alumno
-        //html de alumno
+        //html de alumno donde resolvera la activdad
         return (
             <div id='content'>
                 <div className="container">
                     <HeaderLog outSession={props.outSession} />
                     <div style={{ height: "80vh" }}>
-                        <div className="container">
-                            <button className="btn btn-saloua"><i className="fas fa-door-open"></i> Unirte a clase</button>
-
-                        </div>
-                        Contenido de las clases que obtendre de las bases de datos, responsable directo TONYGARRIDO
+                        <h2>
+                            ACTIVIDAD QUE EL ALUMNO TENDRA QUE RESPONDER JAJA ASI ES
+                        </h2>
+                        
                     </div>
                     <Footer />
                 </div>
@@ -77,7 +76,8 @@ function Actividad(props) {
                     <HeaderLog outSession={props.outSession} />
                     <div style={{ minHeight: "80vh" }}>
                         <div className="container clase-header my-1" align="center">
-                            si
+                            <h2>{alumnosCal !== undefined ? alumnosCal[1][0].nombre_act : null}</h2>
+                            <h4 className="p-1">{alumnosCal !== undefined ? alumnosCal[1][0].type : null}</h4>
                         </div>
                         <div className="container">
                             <button type="button" data-toggle="modal" data-target="#exampleModal" className="btn btn-saloua">

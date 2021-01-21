@@ -57,6 +57,11 @@ function Clases(props) {
                 console.log(respuesta.data);
                 if (cambio) setCambio(false);
                 else setCambio(true);
+                if(respuesta.data.exist === 0){
+                    alert("Clase no existente, ingresa una Id diferente");
+                }else if(respuesta.data.exist === 1){
+                    alert("Ya te has unido a esa clase");
+                } 
             }).catch(error => {
                 console.log(error);
             });

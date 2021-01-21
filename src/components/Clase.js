@@ -35,7 +35,7 @@ function Clase(props) {
             }).catch((error) => {
                 console.log(error);
             })
-        if (userType.ocupacion === 1) API.post('/node/users/actsueltas', { id: props.match.params.classId, id_profesor: userType.id })
+        API.post('/node/users/actsueltas', { id: props.match.params.classId, id_profesor: userType.id })
             .then((respuesta) => {
                 console.log("Respuesta actividades sueltas: ", respuesta.data.data);
                 setactSueltas(respuesta.data.data);
@@ -148,7 +148,7 @@ function Clase(props) {
                     <div style={{ minHeight: "80vh" }}>
                         <div className="container clase-header my-1" align="center">
                             <h1>{claseDatos ? claseDatos.nombre_clase : null}</h1>
-                            <h5 className="p-2">{claseDatos ? claseDatos.nombre + ' ' + claseDatos.apellido : null}</h5>
+                            <h5 className="p-2">Profesor: {claseDatos ? claseDatos.nombre + ' ' + claseDatos.apellido : null}</h5>
                         </div>
                         <div className="container">
                             <div className="row list-saloua">
