@@ -25,6 +25,7 @@ import Actividades from './components/Actividades';
 import Temas from './components/Temas';
 import Clase from './components/Clase';
 import Actividad from './components/Actividad';
+import Editar from './components/Editar';
 
 
 import { Component, useEffect, useState } from "react";
@@ -156,6 +157,9 @@ function App(){
           </Route>
           <Route exact path={`/dashboard/actividades/:actId`}>
             <Actividad outSession={outSession}/>
+          </Route>
+          <Route exact path={`/dashboard/editar/:actId`}>
+            <Editar outSession={outSession}/>
           </Route>
         </Switch>
       </Router>

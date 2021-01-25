@@ -18,8 +18,8 @@ class Dashboard extends react.Component {
                 <div className='container'>
                     <HeaderLog outSession={this.props.outSession} />\
                     <div style={{height : "80vh"}}>
-                        <h1>Hola Soy el Inicio de usuario :) en este lugar ira informacion o un minitutorial de como el usuario puede emepezar atrabajar</h1>
-                        <h2>Ejemplo: BIENVENIDO A SALOUA PRECIONA LA OCION DE CLASES Y POSTERIORMENTE SELECCIONA UNIRTE A UNA CLASE PARA EMPEZAR A TRABAJAR RECUERDA.... CHORO MAREADOR</h2>
+                        <h1>Bienvenido al Inicio de Saloua</h1>
+                        <h2>Para iniciar porfavor ve al menu lateral para crear o acceder a una nueva clase :)</h2>
                         
                     </div>
                     <Footer></Footer>

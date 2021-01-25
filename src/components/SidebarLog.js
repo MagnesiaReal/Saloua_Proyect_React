@@ -31,7 +31,7 @@ class SidebarLog extends react.Component {
         if(this.props.location.pathname === '/dashboard/actividades'){
             var activitytoggle = {display : "none"};
         }
-        if(this.props.location.pathname === '/dashboard/temas'){
+        if(this.props.location.pathname === '/dashboard/temas' || true){
             var topictoggle = {display : "none"};
         }
         if(this.props.location.pathname === '/dashboard'){

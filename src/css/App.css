@@ -105,8 +105,12 @@
   border-radius: 10px;
 }
 
-
-
+/* lo unico que agregue al final  */
+.actividad-svg{
+  border-radius: 10px;
+  background-color: #133b5c;
+  color: #fff;
+}
 
 
 

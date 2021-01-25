@@ -10,7 +10,7 @@ function Actividades(props) {
     const [claseDatos, setclaseDatos] = useState();
     const [actSueltas, setactSueltas] = useState();
     const userType = JSON.parse(sessionStorage.getItem('usersession'));
-    const [newActividad, setnewActividad] = useState({ nombre: '', type: 'memorama' });
+    const [newActividad, setnewActividad] = useState({ nombre: '', type: 'cuestionario' });
     let lista_actividades = null,
         lista_actsueltas = null;
 
@@ -119,8 +119,8 @@ function Actividades(props) {
                             <br />
                             <label className="col-form-label">Tipo de actividad</label>
                             <select className="form-control" value={newActividad.type} onChange={(e) => onChangeType(e)}>
-                                <option value="memorama">memorama</option>
-                                <option value="relacion de circulos">relacion de ciruculos</option>
+                                <option value="cuestionario">cuestionario</option>
+                                <option value="memorama" disabled>memorama</option>
                             </select>
                         </div>
 

@@ -10,7 +10,7 @@ function Clase(props) {
     const [claseDatos, setclaseDatos] = useState();
     const [actSueltas, setactSueltas] = useState();
     const userType = JSON.parse(sessionStorage.getItem('usersession'));
-    const [newActividad, setnewActividad] = useState({ nombre: '', type: 'memorama' });
+    const [newActividad, setnewActividad] = useState({ nombre: '', type: 'cuestionario' });
     let lista_actividades = null,
         lista_actividades_a = null,
         lista_actsueltas = null;
@@ -104,7 +104,6 @@ function Clase(props) {
     }
 
     function onChangeNombreActividad(e) {
-        console.log("nuevo valor de nombre: ", e.target.value)
         setnewActividad(valores => ({ ...valores, nombre: e.target.value }));
     }
 
@@ -128,8 +127,8 @@ function Clase(props) {
                     <span>
                         <div className="v-divider-saloua"></div>
                     </span>
-                    <div className="col-2 d-flex justify-content-center flex-column list-saloua-calif">
-                        <h3>{actividad.calificacion}</h3>
+                    <div className="col-2 d-flex justify-content-center flex-column list-saloua-calif" align="center">
+                        <h2>{actividad.calificacion}</h2>
                     </div>
                 </div>
             );
@@ -241,8 +240,8 @@ function Clase(props) {
                                         <br />
                                         <label className="col-form-label">Tipo de actividad</label>
                                         <select className="form-control" value={newActividad.type} onChange={(e) => onChangeType(e)}>
-                                            <option value="memorama">memorama</option>
-                                            <option value="relacion de circulos">relacion de ciruculos</option>
+                                            <option value="cuestionario">cuestionario</option>
+                                            <option value="memorama" disabled>memorama</option>
                                         </select>
                                     </div>
 

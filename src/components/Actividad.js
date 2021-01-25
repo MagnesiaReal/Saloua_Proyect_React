@@ -2,7 +2,8 @@ import react, { useState, useEffect } from 'react'
 import HeaderLog from './HeaderLog'
 import Footer from './Footer'
 import API from '../http-axios'
-import { withRouter, Link } from 'react-router-dom'
+import { withRouter, Link, Redirect } from 'react-router-dom'
+import Jugar from './Jugar'
 
 function Actividad(props) {
     // Lista de Constantes
@@ -52,17 +53,18 @@ function Actividad(props) {
         )
     }
 
-    if (userType.ocupacion === 0) { // es un alumno
+    if (userType.ocupacion === 0 && alumnosCal !== undefined) { // es un alumno
         //html de alumno donde resolvera la activdad
         return (
             <div id='content'>
                 <div className="container">
                     <HeaderLog outSession={props.outSession} />
-                    <div style={{ height: "80vh" }}>
-                        <h2>
-                            ACTIVIDAD QUE EL ALUMNO TENDRA QUE RESPONDER JAJA ASI ES
-                        </h2>
-                        
+                    <div style={{ minHeight: "80vh" }}>
+                        <div className="container clase-header my-1" align="center">
+                            <h2>{alumnosCal !== undefined ? alumnosCal[1][0].nombre_act : null}</h2>
+                            <h4 className="p-1">{alumnosCal !== undefined ? alumnosCal[1][0].type : null}</h4>
+                        </div>
+                        <Jugar actId={props.match.params.actId} archivo={alumnosCal[1][0].archivo}></Jugar>
                     </div>
                     <Footer />
                 </div>
@@ -80,8 +82,8 @@ function Actividad(props) {
                             <h4 className="p-1">{alumnosCal !== undefined ? alumnosCal[1][0].type : null}</h4>
                         </div>
                         <div className="container">
-                            <button type="button" data-toggle="modal" data-target="#exampleModal" className="btn btn-saloua">
-                                <i className="fas fa-cogs"></i> Editar Actividad</button>
+                            <Link to={"/dashboard/editar/" + props.match.params.actId}> <button type="button" data-toggle="modal" data-target="#exampleModal" className="btn btn-saloua">
+                                <i className="fas fa-cogs"></i> Editar Actividad</button></Link>
                         </div>
                         <div className="container">
                             <div className="row list-saloua">
@@ -97,6 +99,8 @@ function Actividad(props) {
                 </div>
             </div>
         )
+    } else {
+        return (<h1>CARGANDO.....</h1>);
     }
 }
 
